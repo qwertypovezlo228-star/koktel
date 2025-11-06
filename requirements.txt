@@ -1,0 +1,8 @@
+flask
+flask-babel
+email_validator
+Pillow
+python-dotenv
+gunicorn
+authlib
+requests
