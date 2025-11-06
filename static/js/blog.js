@@ -46,7 +46,9 @@ async function loadNews(subscribesOnly) {
     toggleFilterVisibility();
   } catch (err) {
     console.error('Failed to load news:', err);
-    news.style.display = 'none';
+    if (newsFilter) {
+      newsFilter.style.display = 'none';
+    }
   }
 }
 
