@@ -77,7 +77,7 @@ def get_news_cards():
                     WHEN s.subscriber_id IS NOT NULL THEN 1
                     ELSE 0
                 END AS is_subscribed,
-                GROUP_CONCAT(i.image_path, ',' ORDER BY i.id) AS images
+                GROUP_CONCAT(i.image_path, ',') AS images
             FROM blog_posts p
             JOIN users u ON p.user_id = u.id
             LEFT JOIN blog_subscriptions s 
