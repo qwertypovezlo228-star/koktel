@@ -38,7 +38,7 @@ def locale_selector():
 @app.before_request
 def update_last_seen():
     # Пропускаємо перевірку для OAuth маршрутів
-    if request.path.startswith('/login/google'):
+    if request.path.startswith('/login/google') or request.path.startswith('/login/apple'):
         return
     
     session.permanent = True

@@ -45,6 +45,9 @@ msgstr "Увійти"
 msgid "Don't have an account?"
 msgstr "Немає акаунту?"
 
+msgid "Create anonymous account"
+msgstr "Створити анонімний акаунт"
+
 msgid "Koktelparty - Registration"
 msgstr "Koktelparty - Реєстрація"
 
@@ -491,3 +494,30 @@ msgstr "Редагувати пост"
 
 msgid "18+ girlfriend. Browse 14 18+ girlfriend Als. Includes tasks such as Virtual girlfriend, Female pictures, Chatting, Erotic role-play and Stories"
 msgstr "Творці віком від 18 років можуть повністю розкрити свій потенціал, монетизувати свій контент і розвивати справжні зв'язки зі своєю аудиторією в безпечному та сприятливому просторі."
+
+msgid "Sign in with Google"
+msgstr "Увійти через Google"
+
+msgid "Sign up with Google"
+msgstr "Зареєструватися через Google"
+
+msgid "Sign in with Apple"
+msgstr "Увійти через Apple"
+
+msgid "Sign up with Apple"
+msgstr "Зареєструватися через Apple"
+
+msgid "Google authentication error. Please try again."
+msgstr "Помилка авторизації Google. Спробуйте ще раз."
+
+msgid "Google authentication failed. Please try again."
+msgstr "Авторизація Google не вдалася. Спробуйте ще раз."
+
+msgid "Apple authentication error. Please try again."
+msgstr "Помилка авторизації Apple. Спробуйте ще раз."
+
+msgid "Apple authentication failed. Please try again."
+msgstr "Авторизація Apple не вдалася. Спробуйте ще раз."
+
+msgid "in development"
+msgstr "в розробці"

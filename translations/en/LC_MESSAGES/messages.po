@@ -45,6 +45,9 @@ msgstr "Sign in"
 msgid "Don't have an account?"
 msgstr "Don't have an account?"
 
+msgid "Create anonymous account"
+msgstr "Create anonymous account"
+
 msgid "Registration"
 msgstr "Koktelparty - Registration"
 
@@ -491,3 +494,30 @@ msgstr "Edit post"
 
 msgid "18+ girlfriend. Browse 14 18+ girlfriend Als. Includes tasks such as Virtual girlfriend, Female pictures, Chatting, Erotic role-play and Stories"
 msgstr "Сreators 18+  to own their full potential, monetize their content, and develop authentic connections with their audience in a safe and empowering space."
+
+msgid "Sign in with Google"
+msgstr "Sign in with Google"
+
+msgid "Sign up with Google"
+msgstr "Sign up with Google"
+
+msgid "Sign in with Apple"
+msgstr "Sign in with Apple"
+
+msgid "Sign up with Apple"
+msgstr "Sign up with Apple"
+
+msgid "Google authentication error. Please try again."
+msgstr "Google authentication error. Please try again."
+
+msgid "Google authentication failed. Please try again."
+msgstr "Google authentication failed. Please try again."
+
+msgid "Apple authentication error. Please try again."
+msgstr "Apple authentication error. Please try again."
+
+msgid "Apple authentication failed. Please try again."
+msgstr "Apple authentication failed. Please try again."
+
+msgid "in development"
+msgstr "in development"
