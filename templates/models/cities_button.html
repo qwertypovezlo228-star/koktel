@@ -1,0 +1,10 @@
+<a href="#" class="city-button {% if not selected_city %}active{% endif %}" data-city=""> 
+  {{ _('All cities') }}
+</a>
+{% for city, count in cities %}
+  {% if city %}
+    <a href="#" class="city-button {% if selected_city == city %}active{% endif %}" data-city="{{ city | trim }}">
+      {{ _(city) | trim }} ({{ count }})
+    </a>
+  {% endif %}
+{% endfor %}

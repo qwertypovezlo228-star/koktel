@@ -1,0 +1,5 @@
+{% for post in posts %}
+  {% include 'profile/blog/card/preview.html' %}
+{% else %}
+<div class="not-found-message text-shadow">{{ _('No posts to display') }}</div>
+{% endfor %}

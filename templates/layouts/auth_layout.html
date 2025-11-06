@@ -1,0 +1,28 @@
+
+{% extends 'layouts/base_layout.html' %}
+
+{% block body %}
+	<div class="container">
+		<div class="change-language">
+		<center><a href="/help" class="btn" style="margin-right: 1rem;"><span class="icon">󰋗</span> {{ _('Help') }}</a>{% include 'layouts/navbar/change_lang_button/desktop.html' %}</center>
+		</div>
+		<div class="neon-box neon-border mx-auto">
+		<h2 class="mb-2 text-center">{% block h2 %}{% endblock %}</h2>
+		{% if error %}
+			<div class="alert neon-border text-center">{{ error }}</div>
+		{% elif success %}
+			<div class="alert neon-border text-center">{{ success }}</div>
+		{% endif %}
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<div class="alert neon-border text-center " role="alert">
+					{% for message in messages %}
+						<div>{{ message }}</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		{% endwith %}
+		{% block content %}{% endblock %}
+		</div>
+	</div>
+{% endblock %}

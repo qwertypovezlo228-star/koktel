@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Admin Panel"
+msgstr "Admin Panel"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Shared Chat"
+msgstr "Shared Chat"
+
+msgid "Profile"
+msgstr "Profile"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Hello"
+msgstr "Hello"
+
+msgid "Virtual Models"
+msgstr "Virtual Models"
+
+msgid "Escorts"
+msgstr "Individuals"
+
+msgid "Sign in to Koktelparty"
+msgstr "Koktelparty - Sign in"
+
+msgid "Login"
+msgstr "Sign in"
+
+msgid "Username"
+msgstr "Login"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Log In"
+msgstr "Sign in"
+
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
+msgid "Registration"
+msgstr "Koktelparty - Registration"
+
+msgid "Registration"
+msgstr "Registration"
+
+msgid "Name"
+msgstr "Name (visible to all participants on the site)"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Username (needed to log in to the site, not visible to anyone)"
+msgstr "Login (needed to log in to the site, not visible to anyone)"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Sign up"
+msgstr "Sign up"
+
+msgid "Already have an account?"
+msgstr "Already have an account?"
+
+msgid "It is forbidden to use 'admin' in the login"
+msgstr "It is forbidden to use 'admin' in the login" 
+
+msgid "A user with this login already exists."
+msgstr "A user with this login already exists."
+
+msgid "A user with this email already exists."
+msgstr "A user with this email already exists."
+
+msgid "Account created! Please log in now."
+msgstr " Account created! Please log in now."
+
+msgid "Invalid username or password"
+msgstr "Invalid username or password"
+
+msgid "Avatar"
+msgstr "Avatar"
+
+msgid "Verified"
+msgstr "Verified"
+
+msgid "View profile"
+msgstr "View profile"
+
+msgid "No models yet"
+msgstr "No models yet"
+
+msgid "All profiles"
+msgstr "All profiles"
+
+msgid "Verified2"
+msgstr "Verified"
+
+msgid "All cities"
+msgstr "All cities"
+
+msgid "Page not found"
+msgstr "Page not found"
+
+msgid "User profile"
+msgstr "User profile"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Don't show"
+msgstr "Don't show"
+
+msgid "Category:"
+msgstr "Category:"
+
+msgid "Kyiv"
+msgstr "Kyiv"
+
+msgid "Lviv"
+msgstr "Lviv"
+
+msgid "Kharkiv"
+msgstr "Kharkiv"
+
+msgid "Odesa"
+msgstr "Odesa"
+
+msgid "Dnipro"
+msgstr "Dnipro"
+
+msgid "Zaporizhzhia"
+msgstr "Zaporizhzhia"
+
+msgid "Ivano-Frankivsk"
+msgstr "Ivano-Frankivsk"
+
+msgid "Ternopil"
+msgstr "Ternopil"
+
+msgid "Chernivtsi"
+msgstr "Chernivtsi"
+
+msgid "Uzhhorod"
+msgstr "Uzhhorod"
+
+msgid "Poltava"
+msgstr "Poltava"
+
+msgid "Chernihiv"
+msgstr "Chernihiv"
+
+msgid "Zhytomyr"
+msgstr "Zhytomyr"
+
+msgid "Khmelnytskyi"
+msgstr "Khmelnytskyi"
+
+msgid "Lutsk"
+msgstr "Lutsk"
+
+msgid "Vinnytsia"
+msgstr "Vinnytsia"
+
+msgid "City (for individuals):"
+msgstr "City (for individuals):"
+
+msgid "Save changes"
+msgstr "Save changes"
+
+msgid "Messages"
+msgstr "Messages"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "City:"
+msgstr "City:"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "The gallery is empty"
+msgstr "The gallery is empty"
+
+msgid "Upload media:"
+msgstr "Upload media:"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "Uploading..."
+msgstr "Uploading..."
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Add product"
+msgstr "Add product"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "No products"
+msgstr "No products"
+
+msgid "User not found"
+msgstr "User not found"
+
+msgid "Product name"
+msgstr "Product name"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "My dialogs"
+msgstr "My dialogs"
+
+msgid "Chat with"
+msgstr "Chat with"
+
+msgid "Enter a message..."
+msgstr "Enter a message..."
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "Reply to:"
+msgstr "Reply to:"
+
+msgid "Reply"
+msgstr "Reply"
+
+msgid "No dialogues"
+msgstr "No dialogues"
+
+msgid "Uploading..."
+msgstr "Uploading..."
+
+msgid "Progress"
+msgstr "Progress:"
+
+msgid "Uploaded!"
+msgstr " Uploaded!"
+
+msgid "Error during download"
+msgstr " Error during download"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Users"
+msgstr "Users"
+
+msgid "List of dialogues"
+msgstr "List of dialogues between users"
+
+msgid "List of all users"
+msgstr "List of all users"
+
+msgid "Verification"
+msgstr "Verification"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Delete user?"
+msgstr "Delete user?"
+
+msgid "Unverify"
+msgstr "Unverify"
+
+msgid "Verify"
+msgstr "Verify"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Add new user"
+msgstr "Add new user"
+
+msgid "Edit user"
+msgstr "Edit user"
+
+msgid "No messages found"
+msgstr "No messages found"
+
+msgid "Correspondence between %(user1)s and %(user2)s"
+msgstr "Correspondence between %(user1)s and %(user2)s"
+
+msgid "The name cannot be empty"
+msgstr "The name cannot be empty"
+
+msgid "Invalid email"
+msgstr "Invalid email"
+
+msgid "Invalid username"
+msgstr "The username must contain 3 to 30 characters, Latin letters, numbers, and underscores. It must start with a letter and must not end with an underscore; periods are not allowed."
+
+msgid "Invalid password"
+msgstr "Password must be 8–64 characters long and include at least one letter and one number"
+
+msgid "Forgot your password?"
+msgstr "Forgot your password?"
+
+msgid "Reset Password"
+msgstr "Reset Password"
+
+msgid "Enter your email address"
+msgstr "Enter your email address"
+
+msgid "Send Code"
+msgstr "Send Code"
+
+msgid "Back to login"
+msgstr "Back to login"
+
+msgid "Verification Code"
+msgstr "Verification Code"
+
+msgid "New Password"
+msgstr "New Password"
+
+msgid "Confirm New Password"
+msgstr "Confirm New Password"
+
+msgid "Enter the code"
+msgstr "Enter the code"
+
+msgid "There is no user with this email address"
+msgstr "There is no user with this email address"
+
+msgid "The code was sent to the email %(email)s"
+msgstr "The code was sent to the email %(email)s"
+
+msgid "Invalid code"
+msgstr "The code is invalid or has expired"
+
+msgid "The passwords do not match"
+msgstr "The passwords do not match"
+
+msgid "Password successfully updated, you can now log in to your account"
+msgstr "Password successfully updated, you can now log in to your account"
+
+msgid "Hello,\n\nWe received a request to reset your password for your account on {site_host}.\n\nTo reset your password, please use the following code:\n\n{reset_code}\n\nIf you did not request this, please ignore this email."
+msgstr "Hello,\n\nWe received a request to reset your password for your account on {site_host}.\n\nTo reset your password, please use the following code:\n\n{reset_code}\n\nIf you did not request this, please ignore this email."
+
+msgid "Password recovery on {site_host}"
+msgstr "Password recovery on {site_host}"
+
+msgid "Change email"
+msgstr "Change email"
+
+msgid "Only verified"
+msgstr "Only verified"
+
+msgid "Contact the author on Telegram - @koktel892"
+msgstr "Contact the author on Telegram - @koktel892"
+
+msgid "Be careful with uppercase and lowercase letters. «A» and «a» are different letters in a username or password."
+msgstr "Be careful with uppercase and lowercase letters. «A» and «a» are different letters in a username or password."
+
+msgid "My partners"
+msgstr "My partners"
+
+msgid "Partner name"
+msgstr "Name"
+
+msgid "List of all partners"
+msgstr "List of all partners"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Add new partner"
+msgstr "Add new partner"
+
+msgid "Delete partner?"
+msgstr "Delete partner?"
+
+msgid "Please provide the correct link"
+msgstr "Please provide the correct link"
+
+msgid "Please upload an image"
+msgstr "Please upload an image"
+
+msgid "Edit partner"
+msgstr "Edit partner"
+
+msgid "Partners"
+msgstr "Partners"
+
+msgid "Text for link"
+msgstr "Text for link"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Message text"
+msgstr "Message"
+
+msgid "Send an mail to tech support"
+msgstr "Send an mail to tech support"
+
+msgid "Your phone number/email/username on Telegram"
+msgstr "Your phone number/email/username on Telegram"
+
+msgid "Both fields are required"
+msgstr "Both fields are required"
+
+msgid "Your message has been successfully sent"
+msgstr "Your message has been successfully sent"
+
+msgid "Support Inbox"
+msgstr "Support Inbox"
+
+msgid "From"
+msgstr "From"
+
+msgid "Sent at"
+msgstr "Sent at"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "New post"
+msgstr "New post"
+
+msgid "Post title"
+msgstr "Title"
+
+msgid "Post text"
+msgstr "Text"
+
+msgid "You can upload no more than 3 images"
+msgstr "You can upload no more than 3 images"
+
+msgid "The title and text are required fields"
+msgstr "The title and text are required fields"
+
+msgid "Please upload a valid image"
+msgstr "Please upload a valid image"
+
+msgid "No posts to display"
+msgstr "No posts to display"
+
+msgid "Are you sure you want to delete this post?"
+msgstr "Are you sure you want to delete this post?"
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+msgid "Unsubscribe"
+msgstr "Unsubscribe"
+
+msgid "All news"
+msgstr "All news"
+
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+msgid "Read more"
+msgstr "Read more"
+
+msgid "Post not found"
+msgstr "Post not found"
+
+msgid "Blog post"
+msgstr "Blog post"
+
+msgid "Edit post"
+msgstr "Edit post"
+
+msgid "18+ girlfriend. Browse 14 18+ girlfriend Als. Includes tasks such as Virtual girlfriend, Female pictures, Chatting, Erotic role-play and Stories"
+msgstr "Сreators 18+  to own their full potential, monetize their content, and develop authentic connections with their audience in a safe and empowering space."

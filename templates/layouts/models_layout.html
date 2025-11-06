@@ -1,0 +1,38 @@
+
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+<link href="/static/css/models.css" rel="stylesheet">
+<script>
+	const api_url = {{ api_url }};
+</script>
+<script src="/static/js/models.js" defer></script>
+{% endblock %}
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ title }}</h4>
+{% endblock %}
+
+{% block filters %}
+  {% include 'models/filters_mobile_menu.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-2">
+  <h2 class="text-center mb-4 d-none d-lg-block">{{ title }}</h2>
+
+  <div id="verificationFilter" class="city-scroll d-flex align-items-center gap-2 mb-4 d-none d-lg-flex">
+	<span class="toggle-label all-label">{{ _('All profiles') }}</span>
+	  <div class="custom-switch">
+		<input type="checkbox" id="toggleVerified" {% if request.args.get('verified') == '1' %}checked{% endif %}>
+	  </div>
+	<span class="toggle-label verified-label">{{ _('Verified2') }}</span>
+  </div>
+
+  {% block header %}{% endblock %}
+
+  <div class="row g-1" id="modelsContainer">
+  </div>
+</div>
+{% endblock %}
+

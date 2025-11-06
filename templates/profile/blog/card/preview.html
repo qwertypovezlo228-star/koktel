@@ -1,0 +1,19 @@
+<div class="card mb-4 neon-border text-white">
+  <div class="card-body">
+    {% include 'profile/blog/card/partials/author_box.html' %}
+    <h5 class="card-title">{{ post['title'] }}</h5>
+    <hr>
+    <p class="card-text" style="
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;">
+      {{ post['content'] }}
+    </p>
+    {% include 'profile/blog/card/partials/images_box.html' %}
+    <a href="/blog_post/{{ post['id'] }}" class="btn btn-custom mt-2">
+      {{ _('Read more') }}
+    </a>
+  </div>
+</div>

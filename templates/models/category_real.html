@@ -1,0 +1,13 @@
+{% extends 'layouts/models_layout.html' %}
+
+{% block title %}{{ _('Escorts') }}{% endblock %}
+
+{% set api_url %} "/api/individuals_cards?" {% endset %}
+
+{% set title %}<span class="icon"></span> {{ _('Escorts') }}{% endset %}
+
+{% block header %}
+<div id="citiesContainer" class="city-scroll d-none d-lg-flex">
+</div>
+{% endblock %}
+

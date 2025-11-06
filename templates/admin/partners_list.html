@@ -1,0 +1,41 @@
+{% extends 'layouts/admin_table.html' %}
+
+{% set title %}
+  {{ _('List of all partners') }}
+{% endset %}
+
+{% set add_url %}
+  {{ url_for('admin.edit_partner.add_partner_from_admin_panel') }}
+{% endset %}
+
+{% set table_head %}
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>{{ _('Partner name') }}</th>
+        <th>{{ _('Link') }}</th>
+        <th>{{ _('Text for link') }}</th>
+        <th>{{ _('Actions') }}</th>
+      </tr>
+    </thead>
+{% endset %}
+
+{% set table_body %}
+  <tbody>
+    {% for partner in partners %}
+    <tr>
+      <td>{{ partner[3] }}</td>
+      <td>{{ partner[1] if partner[1] else '' }}</td>
+      <td>{% if partner[2] %}<a href="{{ partner[2] }}" class="btn-link">{{ partner[2] }}</a>{% endif %}</td>
+      <td>{{ partner[4] if partner[4] else '' }}</td>
+      <td>
+        <a href="{{ url_for('admin.edit_partner.edit_partner', partner_id=partner[0]) }}" class="btn btn-custom"><span
+            class="icon"></span></a>
+        <a href="{{ url_for('admin.edit_partner.delete_partner', partner_id=partner[0]) }}" class="btn btn-custom"
+          onclick="return confirm('{{ _('Delete partner?') }}')"><span class="icon"></span></a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+{% endset %}
+

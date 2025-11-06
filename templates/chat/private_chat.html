@@ -1,0 +1,14 @@
+{% extends 'layouts/chat_layout.html' %}
+
+{% block head_script %}
+<script>
+	const currentUser = "{{ session['username'] }}";
+	const receiver = "{{ username }}";
+</script>
+{% endblock %}
+
+{% block title %}{{ _('Chat with') }} {{ username }}{% endblock %}
+
+{% set title %}<span class="icon">󱅰</span> {{ _('Chat with') }} {{ username }}{% endset %}
+
+{% block body_script_url %}/static/js/private_chat.js{% endblock %}

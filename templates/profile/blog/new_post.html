@@ -1,0 +1,59 @@
+{% extends 'layouts/base.html' %}
+
+{% set title %}
+{{ _('New post') }}
+{% endset %}
+
+{% block title %}{{ _('New post') }}{% endblock %}
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ title }}</h4>
+{% endblock %}
+
+{% block head %}
+<script src="/static/js/new_post.js" defer></script>
+{% endblock %}
+
+{% block content %}
+<div class="container container-box neon-border">
+  <h2 class="text-center d-none d-md-block">{{ title }}</h2>
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<div class="alert neon-border text-center " role="alert">
+						{% for message in messages %}
+							<div>{{ message }}</div>
+						{% endfor %}
+					</div>
+				{% endif %}
+			{% endwith %}
+  <form method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="title" class="form-label">{{ _('Post title') }}</label>
+      <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">{{ _('Post text') }}</label>
+      <textarea class="form-control" id="description" name="description" rows="12" required></textarea>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="images" class="form-label">{{ _('Image') }}</label>
+      <div id="image-limit-msg" class="text-danger small mt-1" style="display: none;">
+        {{ _('You can upload no more than 3 images') }}
+      </div>
+      <div id="preview-container" class="row g-2 text-center mt-3"></div>
+      <input type="file" class="form-control visually-hidden" id="images" name="images" accept="image/*" multiple
+        onchange="previewImages(event)">
+      <label for="images" class="btn btn-custom w-100 text-center" id="upload-btn">
+        <span class="icon"></span>
+      </label>
+    </div>
+
+
+    <button type="submit" class="btn btn-custom w-100">{{ _('Send') }}</button>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% if session['username'] == 'admin' %}
+<a href="/admin" class="nav-link"><span class="icon"></span> {{ _('Admin Panel') }}</a>
+{% endif %}
+<a href="/home" class="nav-link"><span class="icon"></span> {{ _('Home') }}</a>
+{% if on_shared_chat %}
+<a href="/shared_chat" class="nav-link"><span class="icon">󱅰</span> {{ _('Shared Chat') }}</a>
+{% endif %}
+<a href="/profile" class="nav-link"><span class="icon"></span> {{ _('Profile') }}</a>
+<a href="/logout" class="nav-link"><span class="icon">󰠚</span> {{ _('Logout') }}</a>

@@ -1,0 +1,65 @@
+{% extends 'layouts/base.html' %}
+
+{% set title %}
+  {{ _('Add product') }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  <h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ title }}</h4>
+{% endblock %}
+
+{% block head %}
+  <script src="/static/js/add_product.js" defer></script>
+{% endblock %}
+
+{% block content %}
+  <div class="container container-box neon-border">
+    <h2 class="text-center d-none d-md-block">{{ title }}</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="form-label">{{ _('Product name') }}</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">{{ _('Description') }}</label>
+        <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="price" class="form-label">{{ _('Price') }}</label>
+        <div class="row g-2">
+          <div class="col">
+            <input type="number" class="form-control" id="price" name="price" required>
+          </div>
+          <div class="col-auto">
+            <select name="currency" class="form-control">
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+<div class="mb-3">
+  <label for="image" class="form-label">{{ _('Image') }}</label>
+  <div id="preview-container" class="text-center mt-3" style="display: none;">
+    <img id="image-preview" class="avatar-vertical" alt="{{ _('Preview') }}">
+    <button type="button" class="btn btn-danger mt-2 mb-3" onclick="removeImage()">
+      <span class="icon"></span>
+    </button>
+  </div>
+  <input type="file" class="form-control visually-hidden" id="image" name="image" accept="image/*" required onchange="previewImage(event)">
+  <label for="image" class="btn btn-custom w-100 text-center" id="upload-btn">
+    <span class="icon"></span>
+  </label>
+</div>
+
+<button type="submit" class="btn btn-custom w-100">{{ _('Add product') }}</button>
+    </form>
+  </div>
+
+{% endblock %}
+

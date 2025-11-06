@@ -1,0 +1,51 @@
+{% extends 'layouts/auth_layout.html' %}
+{% block title %}{{ _('Koktelparty - Registration') }}{% endblock %}
+{% block h2 %}{{ _('Registration') }}{% endblock %}
+{% block content %}
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">{{ _("Username (needed to log in to the site, not visible to anyone)") }}</label>
+        <input type="text" name="username" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">{{ _("Password") }}</label>
+        <input type="password" name="password" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">{{ _("Name") }}</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">{{ _("Email") }}</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-custom w-100 mb-3">{{ _("Sign up") }}</button>
+    </form>
+
+    <div class="text-center mb-3">
+      <div class="mb-3" style="position: relative;">
+        <hr style="margin: 1rem 0;">
+        <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--bg-color, #1a1a2e); padding: 0 1rem;">{{ _('or') }}</span>
+      </div>
+      
+      <a href="/login/google" class="btn btn-custom w-100 mb-3 d-flex align-items-center justify-content-center">
+        <svg width="18" height="18" style="margin-right: 8px; vertical-align: middle;" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.48h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/>
+          <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.185l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+          <path fill="#FBBC05" d="M3.964 10.706c-.18-.54-.282-1.117-.282-1.706s.102-1.166.282-1.706V4.962H.957C.348 6.175 0 7.55 0 9s.348 2.825.957 4.038l3.007-2.332z"/>
+          <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.962L3.964 7.294C4.672 5.167 6.656 3.58 9 3.58z"/>
+        </svg>
+        {{ _('Sign up with Google') }}
+      </a>
+      
+      <button type="button" class="btn btn-custom w-100 mb-3 d-flex align-items-center justify-content-center" onclick="alert('{{ _('Functionality in development') }}')">
+        <span style="margin-right: 8px; font-size: 18px; vertical-align: middle;">🍎</span>
+        {{ _('Sign up with Apple') }}
+      </button>
+    </div>
+
+    <div class="mt-3 text-center">
+      <a href="/login" class="btn btn-custom w-100 mb-3">{{ _("Already have an account?") }}</a>
+    </div>
+{% endblock %}
+

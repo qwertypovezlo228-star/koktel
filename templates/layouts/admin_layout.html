@@ -1,0 +1,12 @@
+{% import 'layouts/navbar/admin/mobile.html' as navbar_macros %}
+{% extends 'layouts/base_layout.html' %}
+
+{% block body %}
+  {% call navbar_macros.navbar(locale=locale) %}
+    <h4 style="padding-left: 0.6rem; padding-top: 0.35rem;" {{ h4_mobile_attrs|safe }}>{% block mobile_title %}{% endblock %}</h4>
+  {% endcall %}
+  {% include 'layouts/navbar/admin/desktop.html' %}
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+{% endblock %}

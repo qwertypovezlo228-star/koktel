@@ -1,0 +1,16 @@
+{% import 'layouts/navbar/default/mobile.html' as navbar_macros %}
+{% extends 'layouts/base_layout.html' %}
+
+{% block body %}
+  {% set filters %}
+	{% block filters %}{% endblock %}
+  {% endset %}
+  {% set right_menu %}
+    {% block right_menu %}{% endblock %}
+  {% endset %}
+  {% call navbar_macros.navbar(locale=locale, right_menu=right_menu, filters=filters) %}
+    {% block mobile_title %}{% endblock %}
+  {% endcall %}
+  {% include 'layouts/navbar/default/desktop.html' %}
+  {% block content %}{% endblock %}
+  {% endblock %}

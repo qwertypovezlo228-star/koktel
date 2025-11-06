@@ -1,0 +1,33 @@
+{% extends 'layouts/admin_layout.html' %}
+
+{% set title %}
+  {{ _("Correspondence between %(user1)s and %(user2)s") % {"user1": user1, "user2": user2} }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="d-none d-lg-block">{{ title }}</h2>
+
+  {% if messages %}
+    <ul class="list-group mt-3">
+      {% for msg in messages %}
+        <li class="list-group-item bg-dark text-light">
+		  <a href="/profile/{{ msg.sender }}">{{ msg.sender }}:</a> {{ msg.content }}
+          {% if msg.media_urls %}
+            <br>
+            <img src="{{ msg.media_urls }}" alt="Media" style="max-width: 200px;">
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+	<div class="alert alert-warning mt-3">{{ _('No messages found') }}</div>
+  {% endif %}
+</div>
+{% endblock %}

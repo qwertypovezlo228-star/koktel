@@ -1,0 +1,10 @@
+<select id="citySelect" class="form-select btn btn-custom">
+  <option value="" {% if not selected_city %}selected{% endif %}>{{ _('All cities') }}</option>
+  {% for city, count in cities %}
+    {% if city %}
+      <option value="{{ city | trim }}" {% if selected_city == city %}selected{% endif %}>
+        {{ _(city) | trim }} ({{ count }})
+      </option>
+    {% endif %}
+  {% endfor %}
+</select>

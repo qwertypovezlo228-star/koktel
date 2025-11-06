@@ -1,0 +1,25 @@
+{% extends 'layouts/admin_layout.html' %}
+
+{% block head %}
+  <script>
+    window.TRANSLATIONS = {
+      no_messages_found: "{{ _('No messages found') }}",
+    };
+  </script>
+  <script src="/static/js/load_support_messages_list.js" defer></script>
+{% endblock %}
+
+{% set title %}
+  {{ _('Support Inbox') }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  <span class="icon">󰘥</span> {{ title }}
+{% endblock %}
+
+{% block content %}
+	<h2 class="d-none d-lg-block pt-3"><span class="icon">󰘥</span> {{ title }}</h2>
+  <div class="" id="messages"></div>
+{% endblock %}

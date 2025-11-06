@@ -1,0 +1,136 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+  <link href="/static/css/profile.css" rel="stylesheet">
+  <script src="/static/js/subscribe_to_user.js" defer></script>
+{% endblock %}
+
+{% set title %}
+  {{ _('User profile') }} {{ user[3] }}
+{% endset %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ user[3] }}</h4>
+{% endblock %}
+
+{% block content %}
+  <div class="container container-box neon-border">
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="flash-message">
+          {{ messages[0] }}
+        </div>
+        <script>
+          setTimeout(() => {
+            const msg = document.getElementById('flash-message');
+            if (msg) msg.remove();
+          }, 3000);
+        </script>
+      {% endif %}
+    {% endwith %}
+
+	<h2 class="d-none d-md-block">{{ title }}</h2>
+
+    {% if user[5] == 1 %}
+      <div class="verified-box">✅ {{ _('Verified') }}</div>
+    {% endif %}
+
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <img src="/{{ user[4] or 'static/images/Sample_User_Icon.png' }}" class="avatar-vertical mb-2 neon-border">
+      </div>
+      <div class="col-md-9">
+{% if user[6] %}
+  <div class="user-description mt-3 mt-md-0">{{ user[6] }}</div>
+{% endif %}
+
+<div class="user-meta-line">
+  <span class="meta-label">{{ _('Category:') }}</span>
+  <span class="meta-value">
+    {% if user[7] is none or user[7] == 0 %}
+      {{ _("Don't show") }}
+    {% elif user[7] == 2 %}
+      {{ _('Escorts') }}
+    {% else %}
+      {{ _('Virtual Models') }}
+    {% endif %}
+  </span>
+</div>
+
+{% if user[7] is not none and user[7] == 2 %}
+  <div class="user-meta-line">
+    <span class="meta-label">{{ _('City:') }}</span>
+    <span class="meta-value">{{ _(user[8]) }}</span>
+  </div>
+{% endif %}
+      </div>
+      <div class="text-start mt-1">
+        <a href="/chat_with/{{ user[1] }}" class="btn btn-custom mb-1">
+          <span class="icon">󱅰</span> {{ _('Message') }}
+        </a>
+        {% if not is_subscribed %}
+          {% set unsubcribe_display %}style="display: none;"{% endset %}
+        {% else %}
+          {% set subcribe_display %}style="display: none;"{% endset %}
+        {% endif %}
+        <button type="button" onClick="subscribeToUser({{ user[0] }}, 'inline')" class="btn btn-custom mb-1 subscribe-{{ user[0] }}" {{ subcribe_display }}><span class="icon">󰐕</span> {{ _('Subscribe') }}</button>
+        <button type="button" onClick="unsubscribeFromUser({{ user[0] }}, 'inline')" class="btn btn-custom mb-1 unsubscribe-{{ user[0] }}" {{ unsubcribe_display }}><span class="icon"></span> {{ _('Unsubscribe') }}</button>
+        <a href="/blog/{{ user[0] }}" class="btn btn-custom mb-1">
+          <span class="icon">󱀃</span> {{ _('Blog') }}
+        </a>
+      </div>
+    </div>
+
+    <h4 class="mt-4">{{ _('Gallery') }}</h4>
+
+    {% if photos %}
+      <div class="gallery-scroll mb-3">
+        {% for filename in photos %}
+          <div class="media-item">
+            {% set ext = filename.split('.')[-1].lower() %}
+            {% if ext in ['jpg', 'jpeg', 'png'] %}
+              <img src="{{ url_for('serve_upload', filename='media/' ~ username ~ '/' ~ filename) }}">
+            {% elif ext in ['mp4', 'webm'] %}
+              <video controls>
+                <source src="{{ url_for('serve_upload', filename='media/' ~ username ~ '/' ~ filename) }}">
+              </video>
+            {% endif %}
+
+            {% if session['username'] == username %}
+              <form action="/delete_photo" method="POST">
+                <input type="hidden" name="filename" value="{{ filename }}">
+                <button class="btn btn-custom mt-2">{{ _('Delete') }}</button>
+              </form>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>{{ _('The gallery is empty') }}</p>
+    {% endif %}
+
+    <h4 class="mt-4">{{ _('Products') }}</h4>
+
+    {% if products %}
+      <div class="d-flex flex-wrap gap-3">
+        {% for product in products %}
+          <div class="product-card">
+            <img src="{{ url_for('serve_upload', filename='products/' + username + '/' + product[4]) }}">
+            <p><strong>{{ product[1] }}</strong></p>
+            <p><small>{{ product[2] }}</small></p>
+            <div>{{ product[3] }} {{ product[5] }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>{{ _('No products') }}</p>
+    {% endif %}
+
+  </div>
+{% endblock %}

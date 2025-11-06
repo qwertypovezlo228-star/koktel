@@ -1,0 +1,37 @@
+{% extends 'layouts/admin_layout.html' %}
+
+{% set h4_mobile_attrs %}
+class="messages_title"
+{% endset %}
+
+
+{% set title %}
+  {{ _('List of dialogues') }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  <span class="icon">󱧌</span> {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+	<h2 class="d-none d-lg-block"><span class="icon">󱧌</span> {{ title }}</h2>
+  </div>
+
+  {% if dialogs %}
+    <div class="list-group">
+      {% for dialog in dialogs %}
+        <a href="{{ url_for('admin.user_and_user.admin_view_chat', user1=dialog[0], user2=dialog[1]) }}"
+           class="list-group-item list-group-item-action bg-dark text-light">
+          {{ dialog[0] }} <span class="text-muted">↔</span> {{ dialog[1] }}
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+	<div class="alert alert-warning">{{ _('No dialogues') }}</div>
+  {% endif %}
+</div>
+{% endblock %}

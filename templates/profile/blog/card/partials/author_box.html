@@ -1,0 +1,38 @@
+<div class="d-flex align-items-center mb-2">
+  <a href="{{ url_for('profile.view.profile', username=post['username']) }}">
+    <img src="{{ '/' + post['avatar'] if post['avatar'] else '/static/images/Sample_User_Icon.png' }}"
+      class="dialog-avatar" alt="{{ post['username'] }}" width="40" height="40"
+      style="background-color: rgb(17, 17, 17); color: rgb(255, 255, 255); border: 2px solid rgb(154, 0, 255); border-radius: 50%; font-weight: bold;">
+  </a>
+  <div class="flex-grow-1">
+    <a href="{{ url_for('profile.view.profile', username=post['username']) }}" class="text-decoration-none fw-bold"
+      style="color: rgb(154, 0, 255);">
+      {{ post['name'] }}
+    </a>
+
+    <small class="ms-2 d-none d-md-inline">{{ post['created_at'] }}</small>
+
+    <div class="d-block d-md-none">
+      <small style="font-size: 0.75rem; color: #aaa;">{{ post['created_at'] }}</small>
+    </div>
+  </div>
+  {% if post['username'] != session['username'] %}
+    {% if not post['is_subscribed'] %}
+      {% set unsubcribe_display %}style="display: none;"{% endset %}
+      {% set subcribe_display %}style="display: flex;"{% endset %}
+    {% else %}
+      {% set subcribe_display %}style="display: none;"{% endset %}
+      {% set unsubcribe_display %}style="display: flex;"{% endset %}
+    {% endif %}
+    <button type="button" onClick="subscribeToUser({{ post['user_id'] }})"
+      class="btn btn-custom align-items-center px-2 py-1 subscribe-{{ post['user_id'] }}" {{ subcribe_display }}><span
+        class="icon me-1">󰐕</span> {{ _('Subscribe') }}</button>
+    <button type="button" onClick="unsubscribeFromUser({{ post['user_id'] }})"
+      class="btn btn-custom align-items-center px-2 py-1 unsubscribe-{{ post['user_id'] }}" {{ unsubcribe_display }}><span
+        class="icon me-1"></span> {{ _('Unsubscribe') }}</button>
+  {% else %}
+    <a href="{{ url_for('profile.blog.edit_post.edit_post', post_id=post['id']) }}" class="btn btn-custom me-1"><span class="icon"></span></a>
+    <a href="{{ url_for('profile.blog.delete_post.delete_post', id=post['id'], next=next) }}" class="btn btn-custom"
+      onclick="return confirm('{{ _('Are you sure you want to delete this post?') }}')"><span class="icon"></span></a>
+  {% endif %}
+</div>

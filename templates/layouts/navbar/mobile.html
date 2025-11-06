@@ -1,0 +1,32 @@
+
+{% macro navbar(links_html, locale, right_menu, mobile_title='', filters='') %}
+<div class="navbar-container">
+  <div class="navbar-mobile-toggle d-lg-none d-flex align-items-center justify-content-between p-3 w-100">
+    <button class="btn btn-custom" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+      
+    </button>
+
+    <div>
+      {{ mobile_title|safe }}
+    </div>
+
+    <div class="filters-wrapper">
+      {{ filters|safe }}
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-start"
+       tabindex="-1"
+       id="mobileNav"
+       aria-labelledby="mobileNavLabel"
+       data-bs-backdrop="true"
+       data-bs-scroll="true">
+    <div class="offcanvas-body">
+      {% include links_html %}
+	  {% set locale = locale %}
+      {% include 'layouts/navbar/change_lang_button/mobile.html' %}
+    </div>
+  </div>
+</div>
+{% endmacro %}
+

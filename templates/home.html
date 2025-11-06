@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+{% block title %}{{ _('Home') }}{% endblock %}
+{% block content %}
+<div class="container neon-container neon-border text-center">
+  <h2>{{ _('Hello') }}, {{ username }}!</h2>
+  <div class="d-grid gap-3 col-10 mx-auto">
+	<a href="/shared_chat" class="btn">
+		<span class="icon">󱅰</span> {{ _('Shared Chat') }}
+	</a>
+	<a href="/category/1" class="btn">
+		<span class="icon">󰇴</span> {{ _('Virtual Models') }}
+	</a>
+	<a href="/category/2" class="btn">
+		<span class="icon"></span> {{ _('Escorts') }}
+	</a>
+		<a href="/blog" class="btn">
+		<span class="icon">󱀃</span> {{ _('Blog') }}
+	</a>
+	<a href="/partners" class="btn">
+		<span class="icon">󰡉</span> {{ _('My partners') }}
+	</a>
+	<a href="/help" class="btn">
+		<span class="icon">󰋗</span> {{ _('Help') }}
+	</a>
+  </div>
+</div>
+<div class="text-center mt-5">
+	<div class="container text-shadow">
+		{{ _("Contact the author on Telegram - @koktel892") }}
+	</div>
+</div>
+{% endblock %}
+

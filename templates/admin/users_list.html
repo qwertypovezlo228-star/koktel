@@ -1,0 +1,58 @@
+{% extends 'layouts/admin_table.html' %}
+
+{% set title %}
+  {{ _('List of all users') }}
+{% endset %}
+
+{% set add_url %}
+  {{ url_for('admin.edit_user.add_user_from_admin_panel') }}
+{% endset %}
+
+{% set table_head %}
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>{{ _('Name') }}</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>{{ _('Verification') }}</th>
+        <th>{{ _('Actions') }}</th>
+      </tr>
+    </thead>
+{% endset %}
+
+{% set table_body %}
+  <tbody>
+    {% for user in users %}
+    <tr>
+      <td>{{ user[5] }}</td>
+      <td>{{ user[1] }}</td>
+      <td><a href="/profile/{{ user[2] }}" class="btn-link">{{ user[2] }}</a></td>
+      <td>{{ user[3] }}</td>
+      <td>
+        <span class="icon">
+          {% if user[4] == 1 %}
+          
+          {% else %}
+          
+          {% endif %}
+        </span>
+      </td>
+      <td>
+        <a href="{{ url_for('admin.edit_user.edit_user', user_id=user[0]) }}" class="btn btn-custom"><span
+            class="icon"></span></a>
+        <a href="{{ url_for('admin.edit_user.delete_user', user_id=user[0]) }}" class="btn btn-custom"
+          onclick="return confirm('{{ _('Delete user?') }}')"><span class="icon"></span></a>
+        {% if user[4] == 1 %}
+        <a href="{{ url_for('admin.verification.unverify_user', user_id=user[0]) }}" class="btn btn-custom">{{
+          _('Unverify') }} <span class="icon"></span></a>
+        {% else %}
+        <a href="{{ url_for('admin.verification.verify_user', user_id=user[0]) }}" class="btn btn-custom">{{
+          _('Verify') }} <span class="icon"></span></a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+{% endset %}
+

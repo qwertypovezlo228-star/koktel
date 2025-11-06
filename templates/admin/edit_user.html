@@ -1,0 +1,29 @@
+{% extends 'layouts/admin_layout.html' %}
+
+{% set title %}
+  {{ _('Edit user') }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  <span class="icon"></span> {{ title }}
+{% endblock %}
+
+{% block content %}
+<h2 class="d-none d-lg-block"><span class="icon"></span> {{ title }}</h2>
+
+<form method="post">
+  <div class="mb-3">
+	<label for="name" class="form-label">{{ _('Name') }}</label>
+    <input type="text" class="form-control" id="name" name="name" value="{{ user[3] }}" required>
+  </div>
+
+  <div class="mb-3">
+	<label for="password" class="form-label">{{ _('Password') }}</label>
+    <input type="text" class="form-control" id="password" name="password" value="{{ user[2] }}" required>
+  </div>
+
+  <button type="submit" class="btn btn-custom"><span class="icon"></span> {{_('Save changes') }}</button>
+</form>
+{% endblock %}

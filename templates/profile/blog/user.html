@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+  <link href="/static/css/models.css" rel="stylesheet">
+  <script>const user_id = {{user_id}}</script>
+  <script src="/static/js/subscribe_to_user.js" defer></script>
+  <script src="/static/js/user_blog.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+{% endblock %}
+
+{% set title %}{{ _('Blog') }}: {{ name }}{% endset %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;"><span class="icon">󱀃</span> {{ title }}</h4>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="text-center mt-4 d-none d-lg-block"><span class="icon">󱀃</span> {{ title }}</h2>
+  <div id="cardsContainer"></div>
+</div>
+{% endblock %}

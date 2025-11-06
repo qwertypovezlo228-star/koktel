@@ -1,0 +1,52 @@
+
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+<link href="/static/css/chat.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  window.TRANSLATIONS = {
+    reply_to_prefix: "{{ _('Reply to:') }}",
+    reply_button: "{{ _('Reply') }}"
+  };
+</script>
+<script src="/static/js/chat_common.js" defer></script>
+{% block head_script %}{% endblock %}
+{% endblock %}
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ title }}</h4>
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center mt-4 d-none d-lg-block chat-title">{{ title }}</h2>
+
+<div class="chat-container">
+  <div class="chat-box" id="chat-box"></div>
+  <div id="media-preview-container" class="media-preview-container mt-2"></div>
+  <div id="reply-to" style="display:none;" class="reply-to-box"></div>
+  <form id="chat-form" class="chat-form d-flex align-items-center">
+    <label for="media" class="media-icon">
+      <span class="icon"></span>
+    </label>
+    <input type="file" id="media" class="d-none" accept="image/*" multiple>
+
+    <div class="input-wrapper flex-grow-1"> 
+      <input type="text" id="message" class="form-control chat-input" placeholder="{{ _('Enter a message...') }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+
+    <button type="submit" class="send-button">
+      <span class="icon"></span>
+    </button>
+  </form>
+</div>
+
+<div class="modal-img" id="image-modal">
+  <span class="close-btn" onclick="closeModal()">×</span>
+  <img id="modal-img" src="">
+  <a id="download-link" class="download" href="#" download><span class="icon">󰇚</span></a>
+</div>
+
+<script src="{% block body_script_url %}{% endblock %}"></script>
+{% endblock %}
+

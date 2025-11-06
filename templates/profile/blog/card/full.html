@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card mt-4" style="background-color: #111; color: #fff; border: 2px solid #9a00ff; border-radius: 12px;">
+    <div class="card-body">
+      {% include 'profile/blog/card/partials/author_box.html' %}
+      <h5 class="d-lg-block pt-3">{{ title }}</h5>
+      <hr>
+      <p style="white-space: pre-wrap;">{{ post.content }}</p>
+      {% include 'profile/blog/card/partials/images_box.html' %}
+    </div>
+  </div>
+</div>

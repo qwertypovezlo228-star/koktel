@@ -1,0 +1,22 @@
+{% extends 'layouts/admin_layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+  <h2 class="mb-0 d-none d-lg-block">{{ title }}</h2>
+  <a href="{{ add_url }}" class="btn btn-primary">
+    <span class="icon">󰐕</span> {{ _('Add') }}
+  </a>
+</div>
+<div class="table-responsive mt-5">
+  <table class="table-hover table-bordered neon-border table">
+    {{ table_head }}
+    {{ table_body }}
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'layouts/admin_layout.html' %}
+{% block title %}{{ _('Add new user') }}{% endblock %}
+
+{% set h4_mobile_attrs %}
+class="add_user_title"
+{% endset %}
+
+{% set title %}
+  <span class="icon">󰐕</span> {{ _('Add new user') }}
+{% endset %}
+
+{% block mobile_title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+<h2 class="d-none d-lg-block">{{ title }}</h2>
+
+{% if error %}
+	<div class="alert alert-danger text-center">{{ error }}</div>
+{% endif %}
+
+<form method="post">
+  <div class="mb-3">
+	  <label for="username" class="form-label">{{ _('Username') }}</label>
+    <input type="text" class="form-control" id="username" name="username" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+
+  <div class="mb-3">
+	  <label for="name" class="form-label">{{ _('Name') }}</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+
+  <div class="mb-3">
+	<label for="password" class="form-label">{{ _('Password') }}</label>
+    <input type="password" class="form-control" id="password" name="password" required>
+  </div>
+
+  <button type="submit" class="btn btn-custom"><span class="icon"></span> {{ _('Save') }}</button>
+</form>
+{% endblock %}

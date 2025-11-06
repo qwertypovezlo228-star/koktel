@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}{{ _('My dialogs') }}{% endblock %}
+
+{% block head %}
+<script>
+  window.TRANSLATIONS = {
+    no_dialogs: "{{ _('No dialogues') }}"
+  };
+</script>
+{% endblock %}
+
+{% set title %}
+  <span class="icon">󱧏</span> {{ _('My dialogs') }}
+{% endset %}
+
+{% block mobile_title %}
+  <h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ title }}</h4>
+{% endblock %}
+
+{% block content %}
+<div class="container container-box neon-border">
+	<h2 class="mb-4 d-none d-md-block">{{ title }}</h2>
+  <div id="dialogs"></div>
+</div>
+<script src="/static/js/load_dialogs.js"></script>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+  <script src="/static/js/subscribe_to_user.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+{% endblock %}
+
+{% set title %}
+{{ post.title }}
+{% endset %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block mobile_title %}
+<span class="icon">󱀄</span> {{ _('Blog post') }}
+{% endblock %}
+
+{% block content %}
+
+{% include 'profile/blog/card/full.html' %}
+
+<style>
+  @media (max-width: 768px) {
+    .post-images img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+</style>
+{% endblock %}

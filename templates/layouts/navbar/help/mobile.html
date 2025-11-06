@@ -1,0 +1,8 @@
+{% import 'layouts/navbar/mobile.html' as navbar_macros %}
+
+{% macro navbar(locale) %}
+  {% set title %}
+    {{ caller() }}
+  {% endset %}
+  {{ navbar_macros.navbar(locale=locale, right_menu=right_menu, mobile_title=title, filters='', links_html='layouts/navbar/help/links.html') }}
+{% endmacro %}

@@ -1,0 +1,11 @@
+{% if post['images'] %}
+<div class="row g-2 mt-2">
+  {% for img in post['images'] %}
+  <div class="col-4 col-md-2">
+    <a data-fancybox="gallery" href="{{'/' + img}}">
+      <img src="{{'/' + img }}" class="img-fluid rounded" style="width: 100%; height: auto;">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

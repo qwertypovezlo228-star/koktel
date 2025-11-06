@@ -1,0 +1,45 @@
+{% extends 'layouts/base.html' %}
+{% block title %}{{ _('Partners') }}{% endblock %}
+
+{% block head %}
+<link href="/static/css/models.css" rel="stylesheet">
+{% endblock %}
+
+{% block mobile_title %}
+<h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ _('Partners') }}</h4>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-2">
+  <h2 class="text-center mb-4 d-none d-lg-block">{{ _('Partners') }}</h2>
+  <div class="row g-2" id="modelsContainer">
+    {% for partner in partners %}
+    <div class="col-md-4 col-6">
+      <div class="card h-100 shadow-sm card-box">
+        {% if partner[2] %}
+        <img src="{{ '/' + partner[2] }}" class="avatar-vertical d-block neon-border"
+          alt="{{ partner.name or partner.link }}">
+        {% endif %}
+
+        <div class="card-body text-center">
+          {% if partner[1] %}
+            <div style="color: white;">{{ partner[1] }}</div>
+          {% endif %}
+          {% if partner[4] %}
+          <a href="{{ partner[3] }}" target="_blank" class="text-decoration-none verified-icon">
+            {{ partner[4] }}
+          </a>
+          {% elif partner[3] %}
+            <a href="{{ partner[3] }}" target="_blank" class="text-decoration-none verified-icon">
+              {{ partner[3] }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <p class="text-center mt-4">{{ _('No partners found') }}</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

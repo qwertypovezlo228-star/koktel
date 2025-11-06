@@ -1,0 +1,49 @@
+{% import 'layouts/navbar/default/mobile.html' as navbar_default %}
+{% import 'layouts/navbar/help/mobile.html' as navbar_help %}
+{% extends 'layouts/base_layout.html' %}
+
+{% set mobile_title %}
+  <h4 style="padding-left: 0.6rem; padding-top: 0.35rem;">{{ _('Help') }}</h4>
+{% endset %}
+
+{% block title %}{{ _('Send an mail to tech support') }}{% endblock %}
+
+{% block body %}
+  {% if session['username'] %}
+    {% call navbar_default.navbar(locale=locale) %}
+      {{ mobile_title }}
+    {% endcall %}
+    {% include 'layouts/navbar/default/desktop.html' %}
+  {% else %}
+    {% call navbar_help.navbar(locale=locale) %}
+      {{ mobile_title }}
+    {% endcall %}
+    {% include 'layouts/navbar/help/desktop.html' %}
+  {% endif %}
+  <div class="container">
+    <h2 class="fs-1 ps-2 mt-2 mb-1">{{ _('Send an mail to tech support') }}</h2>
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<div class="alert neon-border text-center mt-3" role="alert">
+						{% for message in messages %}
+							<div>{{ message }}</div>
+						{% endfor %}
+					</div>
+				{% endif %}
+			{% endwith %}
+
+    <form method="post"> 
+      <div class="mb-3">
+        <label for="contact" class="form-label">{{ _('Your phone number/email/username on Telegram') }}</label>
+        <input type="text" class="form-control" id="contact" name="contact" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">{{ _('Message text') }}</label>
+        <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-custom">{{ _('Send') }}</button>
+    </form>
+  </div>
+{% endblock %}

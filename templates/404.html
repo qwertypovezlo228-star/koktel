@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}{{ _('Page not found') }}{% endblock %}
+
+{% block content %}
+<div class="container container-box neon-border">
+	<div class="not-found-message text-center text-shadow">
+		{% block error_message %}
+			<p class="error-code">404!</p>
+			<p class="error-text">{{ _('Page not found') }}</p>
+		{% endblock %}
+	</div>
+</div>
+{% endblock %}
+

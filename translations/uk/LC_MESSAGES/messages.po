@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: uk\n"
+
+msgid "Admin Panel"
+msgstr "Адмін панель"
+
+msgid "Home"
+msgstr "Головна"
+
+msgid "Shared Chat"
+msgstr "Спільний чат"
+
+msgid "Profile"
+msgstr "Профіль"
+
+msgid "Logout"
+msgstr "Вийти"
+
+msgid "Hello"
+msgstr "Привіт"
+
+msgid "Virtual Models"
+msgstr "Віртуальні моделі"
+
+msgid "Escorts"
+msgstr "Індивідуалки"
+
+msgid "Sign in to Koktelparty"
+msgstr "Koktelparty - Вхід"
+
+msgid "Login"
+msgstr "Вхід"
+
+msgid "Username"
+msgstr "Логін"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Log In"
+msgstr "Увійти"
+
+msgid "Don't have an account?"
+msgstr "Немає акаунту?"
+
+msgid "Koktelparty - Registration"
+msgstr "Koktelparty - Реєстрація"
+
+msgid "Registration"
+msgstr "Реєстрація"
+
+msgid "Name"
+msgstr "Ім'я (видно всім учасникам на сайті)"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Username (needed to log in to the site, not visible to anyone)"
+msgstr "Логін (потрібен для входу на сайт, нікому не видно)"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Sign up"
+msgstr "Зареєструватися"
+
+msgid "Already have an account?"
+msgstr "Вже маєш акаунт?"
+
+msgid "It is forbidden to use 'admin' in the login"
+msgstr "Заборонено використовувати 'admin' у логіні"
+
+msgid "A user with this login already exists."
+msgstr "Користувач з таким логіном вже існує"
+
+msgid "A user with this email already exists."
+msgstr "Користувач з таким email вже існує"
+
+msgid "Account created! Please log in now."
+msgstr " Акаунт створено! Тепер увійдіть."
+
+msgid "Invalid username or password"
+msgstr "Невірний логін або пароль"
+
+msgid "Avatar"
+msgstr "Аватар"
+
+msgid "Verified"
+msgstr "Верифіковано"
+
+msgid "View profile"
+msgstr "Переглянути профіль"
+
+msgid "No models yet"
+msgstr "Моделей поки що немає"
+
+msgid "All profiles"
+msgstr "Всі анкети"
+
+msgid "Verified2"
+msgstr "Перевірені"
+
+msgid "All cities"
+msgstr "Усі міста"
+
+msgid "Page not found"
+msgstr "Сторінку не знайдено"
+
+msgid "User profile"
+msgstr "Профіль користувача"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "Don't show"
+msgstr "Не показувати"
+
+msgid "Category:"
+msgstr "Категорія:"
+
+msgid "Kyiv"
+msgstr "Київ"
+
+msgid "Lviv"
+msgstr "Львів"
+
+msgid "Kharkiv"
+msgstr "Харків"
+
+msgid "Odesa"
+msgstr "Одеса"
+
+msgid "Dnipro"
+msgstr "Дніпро"
+
+msgid "Zaporizhzhia"
+msgstr "Запоріжжя"
+
+msgid "Ivano-Frankivsk"
+msgstr "Івано-Франківськ"
+
+msgid "Ternopil"
+msgstr "Тернопіль"
+
+msgid "Chernivtsi"
+msgstr "Чернівці"
+
+msgid "Uzhhorod"
+msgstr "Ужгород"
+
+msgid "Poltava"
+msgstr "Полтава"
+
+msgid "Chernihiv"
+msgstr "Чернігів"
+
+msgid "Zhytomyr"
+msgstr "Житомир"
+
+msgid "Khmelnytskyi"
+msgstr "Хмельницький"
+
+msgid "Lutsk"
+msgstr "Луцьк"
+
+msgid "Vinnytsia"
+msgstr "Вінниця"
+
+msgid "City (for individuals):"
+msgstr "Місто (для індивідуалок):"
+
+msgid "Save changes"
+msgstr "Зберегти зміни"
+
+msgid "Messages"
+msgstr "Повідомлення"
+
+msgid "Message"
+msgstr "Написати"
+
+msgid "Gallery"
+msgstr "Галерея"
+
+msgid "City:"
+msgstr "Місто:"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "The gallery is empty"
+msgstr "Галерея порожня"
+
+msgid "Upload media:"
+msgstr "Завантажити медіа:"
+
+msgid "Upload"
+msgstr "Завантажити"
+
+msgid "Uploading..."
+msgstr "Завантаження..."
+
+msgid "Products"
+msgstr "Товари"
+
+msgid "Add product"
+msgstr "Додати товар"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "No products"
+msgstr "Немає товарів"
+
+msgid "User not found"
+msgstr "Користувача не знайдено"
+
+msgid "Product name"
+msgstr "Назва товару"
+
+msgid "Price"
+msgstr "Ціна"
+
+msgid "Image"
+msgstr "Зображення"
+
+msgid "My dialogs"
+msgstr "Мої діалоги"
+
+msgid "Chat with"
+msgstr "Чат з"
+
+msgid "Enter a message..."
+msgstr "Введіть повідомлення..."
+
+msgid "Send"
+msgstr "Надіслати"
+
+msgid "Download"
+msgstr "Завантажити"
+
+msgid "Reply to:"
+msgstr "Відповідь на:"
+
+msgid "Reply"
+msgstr "Відповісти"
+
+msgid "No dialogues"
+msgstr "Діалогів немає"
+
+msgid "Uploading..."
+msgstr "Завантаження..."
+
+msgid "Progress"
+msgstr "Прогрес:"
+
+msgid "Uploaded!"
+msgstr " Завантажено!"
+
+msgid "Error during download"
+msgstr " Помилка під час завантаження"
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "Users"
+msgstr "Користувачі"
+
+msgid "List of dialogues"
+msgstr "Список діалогів між користувачами"
+
+msgid "List of all users"
+msgstr "Список усіх користувачів"
+
+msgid "Verification"
+msgstr "Верифікація"
+
+msgid "Actions"
+msgstr "Дії"
+
+msgid "Delete user?"
+msgstr "Видалити користувача?"
+
+msgid "Unverify"
+msgstr "Зняти"
+
+msgid "Verify"
+msgstr "Дати"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Add new user"
+msgstr "Додати нового користувача"
+
+msgid "Edit user"
+msgstr "Редагувати користувача"
+
+msgid "No messages found"
+msgstr "Повідомлень не знайдено"
+
+msgid "Correspondence between %(user1)s and %(user2)s"
+msgstr "Переписка між %(user1)s та %(user2)s"
+
+msgid "The name cannot be empty"
+msgstr "Імʼя не може бути пустим"
+
+msgid "Invalid email"
+msgstr "Невірний email"
+
+msgid "Invalid username"
+msgstr "Ім'я користувача має містити від 3 до 30 символів, латинські літери, цифри та символи підкреслення. Воно повинно починатися з літери і не повинно закінчуватися символом підкреслення, крапки заборонені."
+
+msgid "Invalid password"
+msgstr "Пароль має містити від 8 до 64 символів і принаймні одну літеру та одну цифру"
+
+msgid "Forgot your password?"
+msgstr "Забули пароль?"
+
+msgid "Reset Password"
+msgstr "Відновлення пароля"
+
+msgid "Enter your email address"
+msgstr "Введіть адресу електронної пошти"
+
+msgid "Send Code"
+msgstr "Надіслати код"
+
+msgid "Back to login"
+msgstr "Повернутися до входу"
+
+msgid "Verification Code"
+msgstr "Код підтвердження"
+
+msgid "New Password"
+msgstr "Новий пароль"
+
+msgid "Confirm New Password"
+msgstr "Підтвердіть новий пароль"
+
+msgid "Enter the code"
+msgstr "Введіть код"
+
+msgid "There is no user with this email address"
+msgstr "Немає користувача з таким email"
+
+msgid "The code was sent to the email %(email)s"
+msgstr "Код було надіслано на електронну адресу %(email)s"
+
+msgid "Invalid code"
+msgstr "Код невірний або його термін дії минув"
+
+msgid "The passwords do not match"
+msgstr "Паролі не збігаються"
+
+msgid "Password successfully updated, you can now log in to your account"
+msgstr "Пароль успішно оновлено, тепер ви можете увійти до облікового запису"
+
+msgid "Hello,\n\nWe received a request to reset your password for your account on {site_host}.\n\nTo reset your password, please use the following code:\n\n{reset_code}\n\nIf you did not request this, please ignore this email."
+msgstr "Вітаємо,\n\nМи отримали запит на скидання пароля для вашого облікового запису на {site_host}.\n\nЩоб скинути пароль, будь ласка, скористайтеся наступним кодом:\n\n{reset_code}\n\nЯкщо ви не надсилали цей запит, будь ласка, проігноруйте цей лист."
+
+msgid "Password recovery on {site_host}"
+msgstr "Відновлення пароля на {site_host}"
+
+msgid "Change email"
+msgstr "Змінити email"
+
+msgid "Only verified"
+msgstr "Тільки верифіковані"
+
+msgid "Contact the author on Telegram - @koktel892"
+msgstr "Зв'язатися з автором в Telegram - @koktel892"
+
+msgid "Be careful with uppercase and lowercase letters. «A» and «a» are different letters in a username or password."
+msgstr "Враховуйте великі й малі літери. «А» і «а» це різні літери в логіні чи паролі."
+
+msgid "My partners"
+msgstr "Мої партнери"
+
+msgid "Partner name"
+msgstr "Імʼя"
+
+msgid "List of all partners"
+msgstr "Список усіх партнерів"
+
+msgid "Link"
+msgstr "Посилання"
+
+msgid "Add new partner"
+msgstr "Додати нового партнера"
+
+msgid "Delete partner?"
+msgstr "Видалити партнера?"
+
+msgid "Please provide the correct link"
+msgstr "Вкажіть коректне посилання"
+
+msgid "Please upload an image"
+msgstr "Завантажити зображення"
+
+msgid "Edit partner"
+msgstr "Редагувати партнера"
+
+msgid "Partners"
+msgstr "Партнери"
+
+msgid "Text for link"
+msgstr "Текст для посилання"
+
+msgid "Help"
+msgstr "Допомога"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Message text"
+msgstr "Повідомлення"
+
+msgid "Send an mail to tech support"
+msgstr "Надішліть листа в тех підтримку"
+
+msgid "Your phone number/email/username on Telegram"
+msgstr "Ваш телефон/email/username в Telegram"
+
+msgid "Both fields are required"
+msgstr "Обидва поля є обов'язковими для заповнення"
+
+msgid "Your message has been successfully sent"
+msgstr "Ваше повідомлення успішно надіслано"
+
+msgid "Support Inbox"
+msgstr "Вхідні підтримки"
+
+msgid "From"
+msgstr "Від"
+
+msgid "Sent at"
+msgstr "Надіслано"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "New post"
+msgstr "Новий пост"
+
+msgid "Post title"
+msgstr "Назва"
+
+msgid "Post text"
+msgstr "Текст"
+
+msgid "You can upload no more than 3 images"
+msgstr "Можна завантажити не більше 3 зображень"
+
+msgid "The title and text are required fields"
+msgstr "Назва та текст є обов'язковими полями для заповнення"
+
+msgid "Please upload a valid image"
+msgstr "Будь ласка, завантажте дійсне зображення"
+
+msgid "No posts to display"
+msgstr "Немає постів для відображення"
+
+msgid "Are you sure you want to delete this post?"
+msgstr "Ви впевнені, що хочете видалити пост?"
+
+msgid "Subscribe"
+msgstr "Підписатися"
+
+msgid "Unsubscribe"
+msgstr "Відписатися"
+
+msgid "All news"
+msgstr "Усі новини"
+
+msgid "Subscriptions"
+msgstr "Підписки"
+
+msgid "Read more"
+msgstr "Читати далі"
+
+msgid "Post not found"
+msgstr "Пост не знайдено"
+
+msgid "Blog post"
+msgstr "Пост в блозі"
+
+msgid "Edit post"
+msgstr "Редагувати пост"
+
+msgid "18+ girlfriend. Browse 14 18+ girlfriend Als. Includes tasks such as Virtual girlfriend, Female pictures, Chatting, Erotic role-play and Stories"
+msgstr "Творці віком від 18 років можуть повністю розкрити свій потенціал, монетизувати свій контент і розвивати справжні зв'язки зі своєю аудиторією в безпечному та сприятливому просторі."
